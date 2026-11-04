@@ -65,7 +65,7 @@ npm start
 Acesse http://localhost:3000.
 
 ## Link do Repositório
-**A preencher:** cole aqui o link real do GitHub após publicar o projeto.
+[Repositório no GitHub](https://github.com/EnricoMerlinPires/crud-json)
 
 ## Conclusão
 A aplicação passou a persistir dados em arquivos JSON, sem depender de arrays fixos nas rotas. O projeto mantém o CRUD e as páginas existentes. Para uso em produção, recomenda-se um banco de dados, especialmente em hospedagens com sistema de arquivos temporário.
