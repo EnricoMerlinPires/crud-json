@@ -1,0 +1,35 @@
+<%- include("partials/header") %>
+<%- include("partials/nav") %>
+
+<style>
+  .secao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+</style>
+<div class="container mt-5">
+  <div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-4 secao">
+      <h1 class="display-5 fw-bold">Sistema de Gerenciamento:</h1>
+
+      <p class="col-md-8 fs-5">
+        Exemplo desenvolvido com Express, EJS, Routes, Partials e Bootstrap.
+      </p>
+      <div>
+      <a href="/categorias" class="btn btn-primary btn-lg"> Ver Categorias </a>
+      <a href="/clientes" class="btn btn-warning btn-lg"> Ver Clientes </a>
+      <a href="/fornecedores" class="btn btn-secondary btn-lg"> Ver Fornecedores </a>
+      <a href="/produtos" class="btn btn-danger btn-lg"> Ver Produtos </a>
+      </div>
+    </div>
+  </div>
+  <div class="p-5 mb-4 bg-light rounded-3">
+  <h1>Integrantes</h1>
+  <h2>Arthur Araujo Spina</h2>
+  <h2>Enrico Merlin Pires</h2>
+  </div>
+</div>
+<%- include("partials/footer") %>

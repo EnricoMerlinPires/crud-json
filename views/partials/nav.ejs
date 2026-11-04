@@ -1,0 +1,123 @@
+<style>
+
+
+  .topico {
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .topico ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #212529;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: 180px;
+    border-radius: 4px;
+  }
+
+  .topico:hover ul {
+    display: block;
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">Sistema</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#menu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav me-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="/">Início</a>
+        </li>
+
+
+        <!-- CATEGORIAS -->
+        <li class="nav-item topico">
+          <p class="nav-link mb-0">Categorias</p>
+
+          <ul>
+            <li>
+              <a class="nav-link" href="/categorias">Home</a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="/categorias/cadastro">
+                Nova Categoria
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- CLIENTES -->
+
+        <li class="nav-item topico">
+          <p class="nav-link mb-0">Clientes</p>
+
+          <ul>
+            <li>
+              <a class="nav-link" href="/clientes">Home</a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="/clientes/cadastro">
+                Novo Cliente
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- FORNECEDORES -->
+
+        <li class="nav-item topico">
+          <p class="nav-link mb-0">Fornecedor</p>
+
+          <ul>
+            <li>
+              <a class="nav-link" href="/fornecedores">Home</a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="/fornecedores/cadastro">
+                Novo Fornecedor
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- PRODUTOS -->
+
+        <li class="nav-item topico">
+          <p class="nav-link mb-0">Produtos</p>
+
+          <ul>
+            <li>
+              <a class="nav-link" href="/produtos">Home</a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="/produtos/cadastro">
+                Novo Produto
+              </a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>

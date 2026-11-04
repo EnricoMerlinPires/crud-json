@@ -1,0 +1,55 @@
+<%- include("../partials/header") %> 
+<%- include("../partials/nav") %>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+          <h4 class="mb-0">Novo fornecedor</h4>
+        </div>
+
+        <div class="card-body">
+          <form action="/fornecedores" method="POST">
+            <div class="mb-3">
+              <label for="cnpj" class="form-label"> CNPJ </label>
+
+              <input
+                type="text"
+                class="form-control"
+                id="cnpj"
+                name="cnpj"
+                placeholder="Digite o cnpj"
+              />
+            </div>
+            <% if(erro) { %>
+              <script>
+                alert("<%= erro %>")
+              </script>
+              <% } %>
+
+            <div class="mb-3">
+              <label for="email" class="form-label"> Email </label>
+
+              <input
+                class="form-control"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite o email"
+              >
+            </div>
+
+            <div class="d-flex gap-2">
+              <button type="submit" class="btn btn-success">Cadastrar</button>
+
+              <a href="/fornecedores" class="btn btn-secondary"> Cancelar </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("../partials/footer") %>
