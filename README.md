@@ -69,3 +69,22 @@ Acesse http://localhost:3000.
 
 ## Conclusão
 A aplicação passou a persistir dados em arquivos JSON, sem depender de arrays fixos nas rotas. O projeto mantém o CRUD e as páginas existentes. Para uso em produção, recomenda-se um banco de dados, especialmente em hospedagens com sistema de arquivos temporário.
+
+## Link da Aplicação Publicada
+https://crud-json-uwfk.onrender.com
+
+## Testes Realizados
+Foram testadas as operações de cadastro, listagem, edição e
+exclusão de categorias, clientes, fornecedores e produtos,
+tanto localmente quanto na aplicação publicada no Render.
+
+Localmente, também foram conferidas as alterações nos arquivos JSON.
+
+## Limitações da Hospedagem
+A aplicação utiliza o plano gratuito do Render, cujo sistema de
+arquivos é temporário. As alterações nos arquivos JSON podem ser
+perdidas quando o serviço reinicia ou recebe um novo deploy,
+retornando aos dados presentes no repositório.
+
+O primeiro acesso após um período de inatividade pode demorar
+enquanto o serviço é reativado.
